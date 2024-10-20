@@ -17,6 +17,9 @@ This repository contains a Solidity-based Arbitration System that uses ERC-20 to
 5. Minority Voters: Lose 20% of their staked tokens, transferred to the contract.
 6. Penalties and Rewards: All penalties and rewards are reflected directly in wallets through ERC-20 token transfers.
 
+![image](https://github.com/user-attachments/assets/dcaad749-cab3-4eac-b20e-f4d8c639222a)
+
+
 
 # Smart Contract Functions 🔧
 1. stakeTokens(uint256 amount)
