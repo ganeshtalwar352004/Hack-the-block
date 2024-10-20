@@ -33,9 +33,7 @@ Description: Identifies the juror corresponding to a given token.
 Description: Retrieves the stake and address of a specific juror.
 
 # Deployment Instructions 🚀
-
-    # Prerequisites
-1. Install Node.js and Hardhat.
+#1. Install Node.js and Hardhat.
 2. Install dependencies
 npm install
      # Compile the contract
