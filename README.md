@@ -32,7 +32,19 @@ Description: Identifies the juror corresponding to a given token.
 5. getJuror(address addr)
 Description: Retrieves the stake and address of a specific juror.
 
+# Deployment Instructions 🚀
 
+    # Prerequisites
+1. Install Node.js and Hardhat.
+2. Install dependencies
+npm install
+     # Compile the contract
+npx hardhat compile
+     # Deploy the Contract
+1. Update the ERC-20 token address in the deployment script:
+    const tokenAddress = "0xYourERC20TokenAddress"; // Replace with token address
+2.Deploy the contract
+    npx hardhat run scripts/deploy.js --network <network_name>
 #  Security Considerations 🔒
 1. Reentrancy Protection: Ensure transfer and transferFrom calls are reentrancy-safe.
 2. Input Validation: Validate inputs (e.g., ensure positive amounts for staking).
