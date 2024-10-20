@@ -1,13 +1,16 @@
-# #  Hack-the-block
+#   Hack-the-block
+
 
 # Arbitration System Smart Contract 🏛️
 This repository contains a Solidity-based Arbitration System that uses ERC-20 tokens for staking, voting, penalties, and rewards. The system selects jurors randomly based on their staked tokens, applies penalties to minority voters, and distributes rewards to majority voters through ERC-20 token transfers.
+
 
  # Features 🚀
 1. Stake Tokens: Jurors can stake ERC-20 tokens to participate in arbitration.
 2. Token-Weighted Juror Selection: Higher token stakes increase the chance of being selected.
 3. Dispute Resolution: Jurors vote on disputes, with rewards and penalties based on the voting outcome.
 4. Penalties and Rewards Reflected in Wallets: Tokens are transferred directly between the jurors’ wallets and the contract.
+
 
 # How It Works 🔍
 1. Staking: Jurors stake ERC-20 tokens, transferring them to the contract to participate in dispute resolution.
@@ -16,6 +19,7 @@ This repository contains a Solidity-based Arbitration System that uses ERC-20 to
 4. Majority Voters: Receive rewards from the penalty pool.
 5. Minority Voters: Lose 20% of their staked tokens, transferred to the contract.
 6. Penalties and Rewards: All penalties and rewards are reflected directly in wallets through ERC-20 token transfers.
+
 
 # Smart Contract Functions 🔧
 1. stakeTokens(uint256 amount)
@@ -32,17 +36,14 @@ Description: Identifies the juror corresponding to a given token.
 5. getJuror(address addr)
 Description: Retrieves the stake and address of a specific juror.
 
+
 # Deployment Instructions 🚀
-#1. Install Node.js and Hardhat.
-2. Install dependencies
-npm install
-     # Compile the contract
-npx hardhat compile
-     # Deploy the Contract
-1. Update the ERC-20 token address in the deployment script:
-    const tokenAddress = "0xYourERC20TokenAddress"; // Replace with token address
-2.Deploy the contract
-    npx hardhat run scripts/deploy.js --network <network_name>
+npm install             // install node js and its dependencies
+npx hardhat compile     // compile the contract
+const tokenAddress = "0xYourERC20TokenAddress"; // Replace with token address
+npx hardhat run scripts/deploy.js --network <network_name>
+
+
 #  Security Considerations 🔒
 1. Reentrancy Protection: Ensure transfer and transferFrom calls are reentrancy-safe.
 2. Input Validation: Validate inputs (e.g., ensure positive amounts for staking).
