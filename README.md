@@ -38,9 +38,9 @@ Description: Retrieves the stake and address of a specific juror.
 
 
 # Deployment Instructions 🚀
-npm install             // install node js and its dependencies
-npx hardhat compile     // compile the contract
-const tokenAddress = "0xYourERC20TokenAddress"; // Replace with token address
+npm install             
+npx hardhat compile     
+const tokenAddress = "0xYourERC20TokenAddress"; 
 npx hardhat run scripts/deploy.js --network <network_name>
 
 
