@@ -2,6 +2,7 @@ import React from 'react';
 import DisputeCard from '../src/components/dipute-card/DisputeCard';
 import WalletConnect from './components/Wallet-Connect/WalletConnect';
 import './App.css'; // Ensure your styles are imported
+import TokenPurchase from './components/TokenPruchase/TokenPruchase';
 
 const App = () => {
   const disputes = [
@@ -24,6 +25,9 @@ const App = () => {
 
   return (
     <>
+    <div>
+      <TokenPurchase/>
+    </div>
       <div style={{ position: 'relative' }}> {/* Ensure this div is relative for absolute positioning of button */}
         <h1 style={{ textAlign: 'center', marginTop: '20px' }}>Dispute Voting with Wallet</h1>
         <WalletConnect />

@@ -3,7 +3,7 @@ import './dipute-card.css'; // Import the CSS file
 
 const DisputeCard = ({ user1, user2, disputeText }) => {
   return (
-    <div className="dispute-card">
+    <div className="dispute-card ">
       <div className="dispute-header">
         <h2>Dispute</h2>
       </div>

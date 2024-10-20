@@ -73,10 +73,10 @@ contract ArbitrationSystem {
     function resolveDispute(address[] calldata voters, uint8[] calldata votes) external {
         require(voters.length == votes.length, "Voters and votes length mismatch");
 
-        mapping(uint8 => uint256) memory voteCount;
+        mapping(uint8 => uint256) storage voteCount;
 
         // Count votes for each option
-        for (uint256 i = 0; i < votes.length; i++) {
+        for(uint256 i = 0; i < votes.length; i++) {
             voteCount[votes[i]]++;
         }
 
