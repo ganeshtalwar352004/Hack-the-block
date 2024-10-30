@@ -46,7 +46,25 @@ const tokenAddress = "0xYourERC20TokenAddress";
 
 npx hardhat run scripts/deploy.js --network <network_name>
 
+# Environment Variables Setup
 
+**Frontend .env file**
+Create a .env file in the frontend root directory with the following variables:
+
+1. TOKEN_NAME
+2. TOKEN_SYMBOL
+3. TOKEN_SUPPLY
+4. PRIVATE_KEY
+5. INFURA_SEPOLIA_ENDPOINT
+6. REACT_APP_OWNER
+
+**Backend config.env file**
+
+Create a config.env file in the backend root directory with the following variables:
+
+1. DBURI
+2. DBPASSWORD
+3. PORT    
 #  Security Considerations 🔒
 1. Reentrancy Protection: Ensure transfer and transferFrom calls are reentrancy-safe.
 2. Input Validation: Validate inputs (e.g., ensure positive amounts for staking).
